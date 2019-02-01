@@ -1,0 +1,327 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'onoff',
+1 verbose cli   'sleep',
+1 verbose cli   '--save' ]
+2 info using npm@5.6.0
+3 info using node@v9.9.0
+4 verbose npm-session 2ac1be7e5cb0d2e3
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/onoff 1642ms
+8 http fetch GET 200 https://registry.npmjs.org/sleep 1572ms
+9 silly pacote tag manifest for onoff@latest fetched in 2306ms
+10 silly pacote tag manifest for sleep@latest fetched in 1728ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 silly install loadShrinkwrap
+14 silly install loadAllDepsIntoIdealTree
+15 silly resolveWithNewModule onoff@3.2.1 checking installable status
+16 silly resolveWithNewModule sleep@5.2.3 checking installable status
+17 http fetch GET 200 https://registry.npmjs.org/epoll 297ms
+18 http fetch GET 200 https://registry.npmjs.org/lodash.debounce 298ms
+19 silly pacote range manifest for epoll@^2.0.3 fetched in 412ms
+20 silly resolveWithNewModule epoll@2.0.3 checking installable status
+21 silly pacote range manifest for lodash.debounce@^4.0.8 fetched in 413ms
+22 silly resolveWithNewModule lodash.debounce@4.0.8 checking installable status
+23 http fetch GET 200 https://registry.npmjs.org/nan 374ms
+24 http fetch GET 200 https://registry.npmjs.org/bindings 436ms
+25 silly pacote range manifest for nan@^2.10.0 fetched in 553ms
+26 silly resolveWithNewModule nan@2.11.0 checking installable status
+27 silly pacote range manifest for bindings@^1.3.0 fetched in 573ms
+28 silly resolveWithNewModule bindings@1.3.0 checking installable status
+29 silly currentTree TP1-server-node
+29 silly currentTree ├── accepts@1.3.5
+29 silly currentTree ├── array-flatten@1.1.1
+29 silly currentTree ├── async@2.6.1
+29 silly currentTree ├── body-parser@1.18.2
+29 silly currentTree ├── bytes@3.0.0
+29 silly currentTree ├── content-disposition@0.5.2
+29 silly currentTree ├── content-type@1.0.4
+29 silly currentTree ├── cookie-signature@1.0.6
+29 silly currentTree ├── cookie@0.3.1
+29 silly currentTree ├── debug@2.6.9
+29 silly currentTree ├── depd@1.1.2
+29 silly currentTree ├── destroy@1.0.4
+29 silly currentTree ├── ee-first@1.1.1
+29 silly currentTree ├── encodeurl@1.0.2
+29 silly currentTree ├── escape-html@1.0.3
+29 silly currentTree ├── etag@1.8.1
+29 silly currentTree ├── express@4.16.3
+29 silly currentTree ├── finalhandler@1.1.1
+29 silly currentTree ├── forwarded@0.1.2
+29 silly currentTree ├── fresh@0.5.2
+29 silly currentTree ├── http-errors@1.6.3
+29 silly currentTree ├── iconv-lite@0.4.19
+29 silly currentTree ├── inherits@2.0.3
+29 silly currentTree ├── ipaddr.js@1.8.0
+29 silly currentTree ├── lodash@4.17.11
+29 silly currentTree ├── lru-cache@4.1.3
+29 silly currentTree ├── media-typer@0.3.0
+29 silly currentTree ├── merge-descriptors@1.0.1
+29 silly currentTree ├── methods@1.1.2
+29 silly currentTree ├── mime-db@1.36.0
+29 silly currentTree ├── mime-types@2.1.20
+29 silly currentTree ├── mime@1.4.1
+29 silly currentTree ├── ms@2.0.0
+29 silly currentTree ├─┬ mustache-express@1.2.7
+29 silly currentTree │ └── mustache@2.3.2
+29 silly currentTree ├── mustache@3.0.0
+29 silly currentTree ├── negotiator@0.6.1
+29 silly currentTree ├── on-finished@2.3.0
+29 silly currentTree ├── parseurl@1.3.2
+29 silly currentTree ├── path-to-regexp@0.1.7
+29 silly currentTree ├── proxy-addr@2.0.4
+29 silly currentTree ├── pseudomap@1.0.2
+29 silly currentTree ├── qs@6.5.1
+29 silly currentTree ├── range-parser@1.2.0
+29 silly currentTree ├─┬ raw-body@2.3.2
+29 silly currentTree │ ├── depd@1.1.1
+29 silly currentTree │ ├── http-errors@1.6.2
+29 silly currentTree │ └── setprototypeof@1.0.3
+29 silly currentTree ├── safe-buffer@5.1.1
+29 silly currentTree ├── send@0.16.2
+29 silly currentTree ├── serve-static@1.13.2
+29 silly currentTree ├── setprototypeof@1.1.0
+29 silly currentTree ├── statuses@1.4.0
+29 silly currentTree ├── type-is@1.6.16
+29 silly currentTree ├── unpipe@1.0.0
+29 silly currentTree ├── utils-merge@1.0.1
+29 silly currentTree ├── vary@1.1.2
+29 silly currentTree └── yallist@2.1.2
+30 silly idealTree TP1-server-node
+30 silly idealTree ├── accepts@1.3.5
+30 silly idealTree ├── array-flatten@1.1.1
+30 silly idealTree ├── async@2.6.1
+30 silly idealTree ├── bindings@1.3.0
+30 silly idealTree ├── body-parser@1.18.2
+30 silly idealTree ├── bytes@3.0.0
+30 silly idealTree ├── content-disposition@0.5.2
+30 silly idealTree ├── content-type@1.0.4
+30 silly idealTree ├── cookie-signature@1.0.6
+30 silly idealTree ├── cookie@0.3.1
+30 silly idealTree ├── debug@2.6.9
+30 silly idealTree ├── depd@1.1.2
+30 silly idealTree ├── destroy@1.0.4
+30 silly idealTree ├── ee-first@1.1.1
+30 silly idealTree ├── encodeurl@1.0.2
+30 silly idealTree ├── epoll@2.0.3
+30 silly idealTree ├── escape-html@1.0.3
+30 silly idealTree ├── etag@1.8.1
+30 silly idealTree ├── express@4.16.3
+30 silly idealTree ├── finalhandler@1.1.1
+30 silly idealTree ├── forwarded@0.1.2
+30 silly idealTree ├── fresh@0.5.2
+30 silly idealTree ├── http-errors@1.6.3
+30 silly idealTree ├── iconv-lite@0.4.19
+30 silly idealTree ├── inherits@2.0.3
+30 silly idealTree ├── ipaddr.js@1.8.0
+30 silly idealTree ├── lodash.debounce@4.0.8
+30 silly idealTree ├── lodash@4.17.11
+30 silly idealTree ├── lru-cache@4.1.3
+30 silly idealTree ├── media-typer@0.3.0
+30 silly idealTree ├── merge-descriptors@1.0.1
+30 silly idealTree ├── methods@1.1.2
+30 silly idealTree ├── mime-db@1.36.0
+30 silly idealTree ├── mime-types@2.1.20
+30 silly idealTree ├── mime@1.4.1
+30 silly idealTree ├── ms@2.0.0
+30 silly idealTree ├─┬ mustache-express@1.2.7
+30 silly idealTree │ └── mustache@2.3.2
+30 silly idealTree ├── mustache@3.0.0
+30 silly idealTree ├── nan@2.11.0
+30 silly idealTree ├── negotiator@0.6.1
+30 silly idealTree ├── on-finished@2.3.0
+30 silly idealTree ├── onoff@3.2.1
+30 silly idealTree ├── parseurl@1.3.2
+30 silly idealTree ├── path-to-regexp@0.1.7
+30 silly idealTree ├── proxy-addr@2.0.4
+30 silly idealTree ├── pseudomap@1.0.2
+30 silly idealTree ├── qs@6.5.1
+30 silly idealTree ├── range-parser@1.2.0
+30 silly idealTree ├─┬ raw-body@2.3.2
+30 silly idealTree │ ├── depd@1.1.1
+30 silly idealTree │ ├── http-errors@1.6.2
+30 silly idealTree │ └── setprototypeof@1.0.3
+30 silly idealTree ├── safe-buffer@5.1.1
+30 silly idealTree ├── send@0.16.2
+30 silly idealTree ├── serve-static@1.13.2
+30 silly idealTree ├── setprototypeof@1.1.0
+30 silly idealTree ├── sleep@5.2.3
+30 silly idealTree ├── statuses@1.4.0
+30 silly idealTree ├── type-is@1.6.16
+30 silly idealTree ├── unpipe@1.0.0
+30 silly idealTree ├── utils-merge@1.0.1
+30 silly idealTree ├── vary@1.1.2
+30 silly idealTree └── yallist@2.1.2
+31 silly install generateActionsToTake
+32 silly diffTrees action count 6
+33 silly diffTrees add bindings@1.3.0
+34 silly diffTrees add nan@2.11.0
+35 silly diffTrees add epoll@2.0.3
+36 silly diffTrees add lodash.debounce@4.0.8
+37 silly diffTrees add onoff@3.2.1
+38 silly diffTrees add sleep@5.2.3
+39 silly decomposeActions action count 48
+40 silly decomposeActions fetch bindings@1.3.0
+41 silly decomposeActions extract bindings@1.3.0
+42 silly decomposeActions preinstall bindings@1.3.0
+43 silly decomposeActions build bindings@1.3.0
+44 silly decomposeActions install bindings@1.3.0
+45 silly decomposeActions postinstall bindings@1.3.0
+46 silly decomposeActions finalize bindings@1.3.0
+47 silly decomposeActions refresh-package-json bindings@1.3.0
+48 silly decomposeActions fetch nan@2.11.0
+49 silly decomposeActions extract nan@2.11.0
+50 silly decomposeActions preinstall nan@2.11.0
+51 silly decomposeActions build nan@2.11.0
+52 silly decomposeActions install nan@2.11.0
+53 silly decomposeActions postinstall nan@2.11.0
+54 silly decomposeActions finalize nan@2.11.0
+55 silly decomposeActions refresh-package-json nan@2.11.0
+56 silly decomposeActions fetch epoll@2.0.3
+57 silly decomposeActions extract epoll@2.0.3
+58 silly decomposeActions preinstall epoll@2.0.3
+59 silly decomposeActions build epoll@2.0.3
+60 silly decomposeActions install epoll@2.0.3
+61 silly decomposeActions postinstall epoll@2.0.3
+62 silly decomposeActions finalize epoll@2.0.3
+63 silly decomposeActions refresh-package-json epoll@2.0.3
+64 silly decomposeActions fetch lodash.debounce@4.0.8
+65 silly decomposeActions extract lodash.debounce@4.0.8
+66 silly decomposeActions preinstall lodash.debounce@4.0.8
+67 silly decomposeActions build lodash.debounce@4.0.8
+68 silly decomposeActions install lodash.debounce@4.0.8
+69 silly decomposeActions postinstall lodash.debounce@4.0.8
+70 silly decomposeActions finalize lodash.debounce@4.0.8
+71 silly decomposeActions refresh-package-json lodash.debounce@4.0.8
+72 silly decomposeActions fetch onoff@3.2.1
+73 silly decomposeActions extract onoff@3.2.1
+74 silly decomposeActions preinstall onoff@3.2.1
+75 silly decomposeActions build onoff@3.2.1
+76 silly decomposeActions install onoff@3.2.1
+77 silly decomposeActions postinstall onoff@3.2.1
+78 silly decomposeActions finalize onoff@3.2.1
+79 silly decomposeActions refresh-package-json onoff@3.2.1
+80 silly decomposeActions fetch sleep@5.2.3
+81 silly decomposeActions extract sleep@5.2.3
+82 silly decomposeActions preinstall sleep@5.2.3
+83 silly decomposeActions build sleep@5.2.3
+84 silly decomposeActions install sleep@5.2.3
+85 silly decomposeActions postinstall sleep@5.2.3
+86 silly decomposeActions finalize sleep@5.2.3
+87 silly decomposeActions refresh-package-json sleep@5.2.3
+88 silly install executeActions
+89 silly doSerial global-install 48
+90 verbose correctMkdir /home/pi/.npm/_locks correctMkdir not in flight; initializing
+91 verbose lock using /home/pi/.npm/_locks/staging-23a57aa3f8f9fd94.lock for /home/pi/TP2-rc-rj/TP1-server-node/node_modules/.staging
+92 silly doParallel extract 48
+93 silly extract bindings@1.3.0
+94 silly pacote trying bindings@https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz by hash: sha512-DpLh5EzMR2kzvX1KIlVC0VkC3iZtHKTgdtZ0a3pglBZdaQFjt5S9g9xd1lE+YvXyfd6mtCeRnrUfOLYiTMlNSw==
+95 silly extract nan@2.11.0
+96 silly pacote trying nan@https://registry.npmjs.org/nan/-/nan-2.11.0.tgz by hash: sha512-F4miItu2rGnV2ySkXOQoA8FKz/SR2Q2sWP0sbTxNxz/tuokeC8WxOhPMcwi0qIyGtVn/rrSeLbvVkznqCdwYnw==
+97 silly extract epoll@2.0.3
+98 silly pacote trying epoll@https://registry.npmjs.org/epoll/-/epoll-2.0.3.tgz by hash: sha512-rX/LGxKyFeCdvRHIgr+pl3Q3iC1Sp8Bv1oqDNDwnzQeYY5slRdJlqsLR02RJlkhfx+ldkNqBEM5BtnDM0HPNsA==
+99 silly extract lodash.debounce@4.0.8
+100 silly pacote trying lodash.debounce@https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz by hash: sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+101 silly extract onoff@3.2.1
+102 silly pacote trying onoff@https://registry.npmjs.org/onoff/-/onoff-3.2.1.tgz by hash: sha512-p4Z+OJpijvCh5V9XRGmQugT4O/TytCxkuIYJtsluFA00lram+PsEG8fFPirJWO6LJecrQF3M/kC0B5rdmD7F5g==
+103 silly extract sleep@5.2.3
+104 silly pacote trying sleep@https://registry.npmjs.org/sleep/-/sleep-5.2.3.tgz by hash: sha512-vC05N1XqgIiPIj6tEq7wt0R32aTycJv4Ymo/jwSEp2PkeU1GCJ1tkl+RdYZEo7Gjebq8QQuhFuEe7vsyVGlFRA==
+105 silly pacote data for sha512-DpLh5EzMR2kzvX1KIlVC0VkC3iZtHKTgdtZ0a3pglBZdaQFjt5S9g9xd1lE+YvXyfd6mtCeRnrUfOLYiTMlNSw== not present. Using manifest.
+106 silly pacote data for sha512-F4miItu2rGnV2ySkXOQoA8FKz/SR2Q2sWP0sbTxNxz/tuokeC8WxOhPMcwi0qIyGtVn/rrSeLbvVkznqCdwYnw== not present. Using manifest.
+107 silly pacote data for sha512-rX/LGxKyFeCdvRHIgr+pl3Q3iC1Sp8Bv1oqDNDwnzQeYY5slRdJlqsLR02RJlkhfx+ldkNqBEM5BtnDM0HPNsA== not present. Using manifest.
+108 silly pacote data for sha1-gteb/zCmfEAF/9XiUVMArZyk168= not present. Using manifest.
+109 silly pacote data for sha512-p4Z+OJpijvCh5V9XRGmQugT4O/TytCxkuIYJtsluFA00lram+PsEG8fFPirJWO6LJecrQF3M/kC0B5rdmD7F5g== not present. Using manifest.
+110 silly pacote data for sha512-vC05N1XqgIiPIj6tEq7wt0R32aTycJv4Ymo/jwSEp2PkeU1GCJ1tkl+RdYZEo7Gjebq8QQuhFuEe7vsyVGlFRA== not present. Using manifest.
+111 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz 2815ms
+112 silly pacote bindings@https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz extracted in 3052ms
+113 http fetch GET 200 https://registry.npmjs.org/epoll/-/epoll-2.0.3.tgz 3019ms
+114 http fetch GET 200 https://registry.npmjs.org/sleep/-/sleep-5.2.3.tgz 3028ms
+115 http fetch GET 200 https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz 3054ms
+116 silly pacote sleep@https://registry.npmjs.org/sleep/-/sleep-5.2.3.tgz extracted in 3277ms
+117 silly pacote lodash.debounce@https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz extracted in 3293ms
+118 http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.11.0.tgz 3391ms
+119 http fetch GET 200 https://registry.npmjs.org/onoff/-/onoff-3.2.1.tgz 3520ms
+120 silly pacote epoll@https://registry.npmjs.org/epoll/-/epoll-2.0.3.tgz extracted in 3856ms
+121 silly pacote nan@https://registry.npmjs.org/nan/-/nan-2.11.0.tgz extracted in 4152ms
+122 silly pacote onoff@https://registry.npmjs.org/onoff/-/onoff-3.2.1.tgz extracted in 4170ms
+123 silly doReverseSerial unbuild 48
+124 silly doSerial remove 48
+125 silly doSerial move 48
+126 silly doSerial finalize 48
+127 silly finalize /home/pi/TP2-rc-rj/TP1-server-node/node_modules/bindings
+128 silly finalize /home/pi/TP2-rc-rj/TP1-server-node/node_modules/nan
+129 silly finalize /home/pi/TP2-rc-rj/TP1-server-node/node_modules/epoll
+130 silly finalize /home/pi/TP2-rc-rj/TP1-server-node/node_modules/lodash.debounce
+131 silly finalize /home/pi/TP2-rc-rj/TP1-server-node/node_modules/onoff
+132 silly finalize /home/pi/TP2-rc-rj/TP1-server-node/node_modules/sleep
+133 silly doParallel refresh-package-json 48
+134 silly refresh-package-json /home/pi/TP2-rc-rj/TP1-server-node/node_modules/bindings
+135 silly refresh-package-json /home/pi/TP2-rc-rj/TP1-server-node/node_modules/nan
+136 silly refresh-package-json /home/pi/TP2-rc-rj/TP1-server-node/node_modules/epoll
+137 silly refresh-package-json /home/pi/TP2-rc-rj/TP1-server-node/node_modules/lodash.debounce
+138 silly refresh-package-json /home/pi/TP2-rc-rj/TP1-server-node/node_modules/onoff
+139 silly refresh-package-json /home/pi/TP2-rc-rj/TP1-server-node/node_modules/sleep
+140 silly doParallel preinstall 48
+141 silly preinstall bindings@1.3.0
+142 info lifecycle bindings@1.3.0~preinstall: bindings@1.3.0
+143 silly preinstall nan@2.11.0
+144 info lifecycle nan@2.11.0~preinstall: nan@2.11.0
+145 silly preinstall epoll@2.0.3
+146 info lifecycle epoll@2.0.3~preinstall: epoll@2.0.3
+147 silly preinstall lodash.debounce@4.0.8
+148 info lifecycle lodash.debounce@4.0.8~preinstall: lodash.debounce@4.0.8
+149 silly preinstall onoff@3.2.1
+150 info lifecycle onoff@3.2.1~preinstall: onoff@3.2.1
+151 silly preinstall sleep@5.2.3
+152 info lifecycle sleep@5.2.3~preinstall: sleep@5.2.3
+153 silly doSerial build 48
+154 silly build bindings@1.3.0
+155 info linkStuff bindings@1.3.0
+156 silly linkStuff bindings@1.3.0 has /home/pi/TP2-rc-rj/TP1-server-node/node_modules as its parent node_modules
+157 verbose linkBins bindings@1.3.0
+158 verbose linkMans bindings@1.3.0
+159 silly build nan@2.11.0
+160 info linkStuff nan@2.11.0
+161 silly linkStuff nan@2.11.0 has /home/pi/TP2-rc-rj/TP1-server-node/node_modules as its parent node_modules
+162 verbose linkBins nan@2.11.0
+163 verbose linkMans nan@2.11.0
+164 silly build epoll@2.0.3
+165 info linkStuff epoll@2.0.3
+166 silly linkStuff epoll@2.0.3 has /home/pi/TP2-rc-rj/TP1-server-node/node_modules as its parent node_modules
+167 verbose linkBins epoll@2.0.3
+168 verbose linkMans epoll@2.0.3
+169 silly build lodash.debounce@4.0.8
+170 info linkStuff lodash.debounce@4.0.8
+171 silly linkStuff lodash.debounce@4.0.8 has /home/pi/TP2-rc-rj/TP1-server-node/node_modules as its parent node_modules
+172 verbose linkBins lodash.debounce@4.0.8
+173 verbose linkMans lodash.debounce@4.0.8
+174 silly build onoff@3.2.1
+175 info linkStuff onoff@3.2.1
+176 silly linkStuff onoff@3.2.1 has /home/pi/TP2-rc-rj/TP1-server-node/node_modules as its parent node_modules
+177 verbose linkBins onoff@3.2.1
+178 verbose linkMans onoff@3.2.1
+179 silly build sleep@5.2.3
+180 info linkStuff sleep@5.2.3
+181 silly linkStuff sleep@5.2.3 has /home/pi/TP2-rc-rj/TP1-server-node/node_modules as its parent node_modules
+182 verbose linkBins sleep@5.2.3
+183 verbose linkMans sleep@5.2.3
+184 silly doSerial global-link 48
+185 silly doParallel update-linked 48
+186 silly doSerial install 48
+187 silly install bindings@1.3.0
+188 info lifecycle bindings@1.3.0~install: bindings@1.3.0
+189 silly install nan@2.11.0
+190 info lifecycle nan@2.11.0~install: nan@2.11.0
+191 silly install epoll@2.0.3
+192 info lifecycle epoll@2.0.3~install: epoll@2.0.3
+193 verbose lifecycle epoll@2.0.3~install: unsafe-perm in lifecycle true
+194 verbose lifecycle epoll@2.0.3~install: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/pi/TP2-rc-rj/TP1-server-node/node_modules/epoll/node_modules/.bin:/home/pi/TP2-rc-rj/TP1-server-node/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+195 verbose lifecycle epoll@2.0.3~install: CWD: /home/pi/TP2-rc-rj/TP1-server-node/node_modules/epoll
+196 silly lifecycle epoll@2.0.3~install: Args: [ '-c', 'node-gyp rebuild' ]
+197 error cb() never called!
+198 error This is an error with npm itself. Please report this error at:
+199 error <https://github.com/npm/npm/issues>
