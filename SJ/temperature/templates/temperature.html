@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Temperature {%endblock%}
+
+
+{% block content%}
+<div class="container {% if celsius < 15 %}bg-primary{% elif 15 <= celsius < 30 %}bg-warning{% elif celsius >= 30 %}bg-danger{% endif %}">
+{% if celsius < 15 %}<p>Il fait froid, il fait {{ celsius }}°C</p><img src="http://31.media.tumblr.com/tumblr_lqaouu1dKP1qeeqito1_500.gif">{% elif 15 <= celsius < 30 %}<p>Ça peut aller, il fait {{ celsius }}°C </p><img src="http://ic.pics.livejournal.com/penderies/40900344/201485/201485_original.gif">{% elif celsius >= 30 %}<p>Il fait chaud, il fait {{ celsius }}°C </p><img src="https://cimg.tvgcdn.net/i/2017/02/10/e9379eff-3d48-4b00-9a44-f6b17ddef2ef/woowoo.gif">{% endif %}
+</div>
+{%endblock%}
+
+

@@ -1,0 +1,178 @@
+# Imports
+import os
+import glob
+import time
+
+# Intialisation des broches
+os.system('modprobe w1-gpio')  # Allume le module 1wire
+os.system('modprobe w1-therm')  # Allume le module Temperature
+
+# Chemin du fichier contenant la température (remplacer par votre valeur trouvée précédemment)
+device_file = '/sys/bus/w1/devices/28-01131a3eb0d1/w1_slave'
+
+# Une fonction qui lit dans le fichier température
+def read_temp_raw():
+    f = open(device_file, 'r')  # Ouvre le dichier
+    lines = f.readlines() # Returns the text
+    f.close()
+    return lines
+    
+# Lis la temperature 
+def read_temp():
+    lines = read_temp_raw()  # Lit le fichier de température
+    # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
+    # On relis ensuite le fichier
+    while lines[0].strip()[-3:] != 'YES':
+        time.sleep(0.2)
+        lines = read_temp_raw()
+	# On cherche le '=' dans la seconde ligne du fichier
+    equals_pos = lines[1].find('t=')
+    # Si le '=' est trouvé, on converti ce qu'il y a après le '=' en degrées celcius
+    if equals_pos != -1:
+        temp_string = lines[1][equals_pos+2:]
+        temp_c = float(temp_string) / 1000.0
+        return temp_c
+        
+# On affiche la temérature tant que le script tourne
+#while True:
+    #print(read_temp())
+    #time.sleep(1)
+
+class TemperatureSensor():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pi@big-bang-theory:~/BBT/templates $ nano hello.html
+pi@big-bang-theory:~/BBT/templates $ cd ../
+pi@big-bang-theory:~/BBT $ python3 -m flask run --host=0.0.0.0
+ * Serving Flask app "hello.py"
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+192.168.2.48 - - [31/Jan/2019 14:59:56] "GET /led/off/ HTTP/1.1" 404 -
+192.168.2.48 - - [31/Jan/2019 15:00:04] "GET /led/ HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:12] "GET /led/on HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:13] "GET /led/on HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:16] "GET /led/off HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:17] "GET /led/on HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:18] "GET /led/off HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:19] "GET /led/on HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:20] "GET /led/off HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:20] "GET /led/on HTTP/1.1" 200 -
+192.168.2.48 - - [31/Jan/2019 15:00:21] "GET /led/off HTTP/1.1" 200 -
+^Cpi@big-bang-theory:~/BBT $ touch led.py
+pi@big-bang-theory:~/BBT $ nano led.py
+pi@big-bang-theory:~/BBT $ nano hello.py
+pi@big-bang-theory:~/BBT $ nano led.py
+pi@big-bang-theory:~/BBT $ nano led.py
+pi@big-bang-theory:~/BBT $ nano hello.py
+pi@big-bang-theory:~/BBT $ nano led.py
+pi@big-bang-theory:~/BBT $ nano hello.py
+pi@big-bang-theory:~/BBT $ python3 -m flask run --host=0.0.0.0
+ * Serving Flask app "hello.py"
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.5/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/__main__.py", line 14, in <module>
+    main(as_module=True)
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 894, in main
+    cli.main(args=args, prog_name=name)
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 557, in main
+    return super(FlaskGroup, self).main(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/home/pi/.local/lib/python3.5/site-packages/click/core.py", line 1137, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/pi/.local/lib/python3.5/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/pi/.local/lib/python3.5/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/click/decorators.py", line 64, in new_func
+    return ctx.invoke(f, obj, *args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 767, in run_command
+    app = DispatchingApp(info.load_app, use_eager_loading=eager_loading)
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 293, in __init__
+    self._load_unlocked()
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 317, in _load_unlocked
+    self._app = rv = self.loader()
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 372, in load_app
+    app = locate_app(self, import_name, name)
+  File "/home/pi/.local/lib/python3.5/site-packages/flask/cli.py", line 235, in locate_app
+    __import__(module_name)
+  File "/home/pi/BBT/hello.py", line 7, in <module>
+    led1 = Led(14)
+  File "/home/pi/BBT/led.py", line 5, in __init__
+    self.statut = GPIO.LOW
+NameError: name 'GPIO' is not defined
+pi@big-bang-theory:~/BBT $ ^C
+pi@big-bang-theory:~/BBT $ nano led.py
+pi@big-bang-theory:~/BBT $ python3 -m flask run --host=0.0.0.0
+ * Serving Flask app "hello.py"
+
+
+
+
+temp = TemperatureSensor()
+temp.celcius()
